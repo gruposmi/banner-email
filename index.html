@@ -8,6 +8,7 @@
       html,
       body,
       div,
+      a,
       img {
         margin: 0;
         padding: 0;
@@ -22,6 +23,14 @@
       body {
         line-height: 1;
       }
+      #banner {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      #banner-map {
+        position: absolute;
+      }
     </style>
   </head>
   <body>
@@ -31,31 +40,19 @@
       usemap="#banner-map"
       alt="Banner"
     />
-    <map name="banner-map">
-      <area
-        shape="rect"
-        coords="1010,21,1207,57"
-        href="https://www.sinasc.com.br/"
-        alt="Sinasc"
-      />
-      <area
-        shape="rect"
-        coords="1010,86,1202,131"
-        href="https://www.icdvias.com.br/"
-        alt="Icd"
-      />
-      <area
-        shape="rect"
-        coords="1010,157,1120,196"
-        href="https://www.sinasc.com.br/"
-        alt="BRs Vias"
-      />
-      <area
-        shape="rect"
-        coords="1010,215,1205,262"
-        href="https://www.lojaviaria.com.br/"
-        alt="Loja Viária"
-      />
+    <map id="banner-map" name="banner-map">
+      <a href="https://www.sinasc.com.br/">
+        <area shape="rect" coords="1010,21,1207,57" alt="Sinasc"
+      /></a>
+      <a href="https://www.icdvias.com.br/">
+        <area shape="rect" coords="1010,86,1202,131" alt="Icd" />
+      </a>
+      <a href="https://www.sinasc.com.br/">
+        <area shape="rect" coords="1010,157,1120,196" alt="BRs Vias" />
+      </a>
+      <a href="https://www.lojaviaria.com.br/">
+        <area shape="rect" coords="1010,215,1205,262" alt="Loja Viária" />
+      </a>
     </map>
   </body>
 </html>
