@@ -127,9 +127,3 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-.clickable-area {
-  position: absolute;
-  border: 2px solid rgb(0, 4, 255);
-  pointer-events: none;
-}
